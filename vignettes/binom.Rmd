@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 output: 
   rmarkdown::html_vignette:
     toc: true
-bibliography: rmx.bib
+bibliography: robrmx.bib
 vignette: >
   %\VignetteIndexEntry{Binomial Probability}
   %\VignetteEngine{knitr::rmarkdown}
@@ -20,7 +20,7 @@ to be known. For more details we refer to Chapter 3 of @Kohl2005.
 
 We first load the package.
 ```{r}
-library(rmx)
+library(robrmx)
 ```
 
 
