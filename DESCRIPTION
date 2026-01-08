@@ -1,7 +1,7 @@
-Package: rmx
+Package: robrmx
 Version: 1.0
-Date: 2023-05-20
-Title: Radius-Minimax Estimators
+Date: 2026-01-08
+Title: Optimally Robust Radius-Minimax Estimators
 Authors@R: person("Matthias", "Kohl", role = c("aut", "cre"),
                   email = "Matthias.Kohl@stamats.de", 
                   comment = c(ORCID = "0000-0001-9514-8910"))
