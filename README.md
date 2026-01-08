@@ -1,4 +1,4 @@
-# <img src="https://github.com/stamats/rmx/raw/main/hex-rmx.png" alt="rmx" width="120"/> &emsp; rmx: Radius-minimax Estimators
+# <img src="https://github.com/stamats/rmx/raw/main/hex-rmx.png" alt="rmx" width="120"/> &emsp; robrmxrmx: Optimally robust Radius-minimax Estimators
 
 The repository includes the development version of R package rmx
 
@@ -21,7 +21,7 @@ plots and finite-sample corrections are included.
 ## Motivation
 The rmx estimators are also implemented in the RobASt-family of packages (i.e.,
 packages RobAStBase, ROptEst, RobLox, RobExtremes, ROptRegTS, RobRex). However, 
-package rmx provides a much simpler interface and lower computation times at 
+package robrmx provides a much simpler interface and lower computation times at 
 the cost of being less general and flexible.
 
 
@@ -30,12 +30,12 @@ the cost of being less general and flexible.
 ```{r, eval = FALSE}
 ## Development version from GitHub
 # install.packages("remotes")
-remotes::install_github("stamats/rmx")
+remotes::install_github("stamats/robrmx")
 ```
 
 
 ## Getting started
 
 ```{r}
-library(rmx)
+library(robrmx)
 ```
