@@ -41,10 +41,10 @@ riPlot(x, \dots)
   \item{point.alpha}{ alpha used for color shading.}
   \item{point.length.out}{ number of point sizes used to visualize the absolut/total
                            information assigned to a data point; see argument
-                           \code{breaks} of function \code{\link{scale_size}}.}
+                           \code{breaks} of function \code{\link[ggplot2]{scale_size}}.}
   \item{point.range}{ a numeric vector of length 2 specifing the minimum and maximum 
                       size of the data points; see argument
-                      \code{range} of function \code{\link{scale_size}}}
+                      \code{range} of function \code{\link[ggplot2]{scale_size}}}
   \item{plot}{ if \code{FALSE}, the plotting is suppressed. Can be used to modify
                the invisibly returned plotting object. }
   \item{\dots}{ further arguments passed through. }
@@ -70,8 +70,7 @@ riPlot(x, \dots)
 
   Rieder, H., Kohl, M. and Ruckdeschel, P. (2008) The Costs of not Knowing
   the Radius. Statistical Methods and Applications \emph{17}(1) 13-40.
-  Extended version: \url{http://r-kurs.de/RRlong.pdf}
-  
+
   M. Kohl, P. Ruckdeschel, and H. Rieder (2010). Infinitesimally Robust Estimation 
   in General Smoothly Parametrized Models. \emph{Statistical Methods and Application}, 
   \bold{19}(3):333-354. 

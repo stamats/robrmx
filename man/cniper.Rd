@@ -76,8 +76,7 @@ cniper(x, \dots)
 
   Rieder, H., Kohl, M. and Ruckdeschel, P. (2008) The Costs of not Knowing
   the Radius. Statistical Methods and Applications \emph{17}(1) 13-40.
-  Extended version: \url{http://r-kurs.de/RRlong.pdf}.
-  
+
   Ruckdeschel, P. (2010). Consequences of Higher Order Asymptotics for the MSE 
   of M-estimators on Neighborhoods. arXiv, \url{https://arxiv.org/abs/1006.0123}.
 
