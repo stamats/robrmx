@@ -59,9 +59,9 @@ fsRadius.norm <- function(r, n){
     
     eps <- r/sqrt(n)
     ns <- c(3:50, seq(55, 100, by = 5), seq(110, 200, by = 10), 
-            seq(250, 500, by = 50))
+            seq(225, 500, by = 25))
     ns <- as.integer(ns)
-    epss <- c(seq(0.001, 0.01, by = 0.001), seq(0.02, to = 0.5, by = 0.01))
+    epss <- c(seq(0.001, 0.05, by = 0.001), seq(0.06, to = 0.5, by = 0.01))
     if(n %in% ns){
         ind <- ns == n
         r <- max(r, approx(x = epss, y = .fsRadius.norm[,ind], 

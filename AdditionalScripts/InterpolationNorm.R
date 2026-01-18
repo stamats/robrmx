@@ -4,7 +4,9 @@
 
 ## source optIFNorm.R
 radius <- c(1e-8, 5e-8, 1e-7, 5e-7, 1e-6, 5e-6, 1e-5, 5e-5, seq(1e-4, 0.01, by = 0.001),
-            seq(0.02, 5, by = 0.01), seq(5.05, 10, by = 0.05))
+            seq(0.02, 5, by = 0.01), seq(5.05, 10, by = 0.05), 
+            seq(10.1, 20, by = 0.1), seq(20.5, 50, by = 0.5),
+            seq(51, 99, by = 1))
 
 fun <- function(radius){
   print(radius)
