@@ -60,6 +60,8 @@ x <- rnorm(100, mean=ind*3, sd=(1-ind) + ind*9)
 res <- rmx(x, eps.lower = 0.01, eps.upper = 0.1)
 confint(res)
 confint(res, method = "as.bias")
-#confint(res, method = "boot", R = 999)
+\donttest{
+confint(res, method = "boot", R = 999)
+}
 }
 \keyword{robust}

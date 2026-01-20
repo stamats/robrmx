@@ -270,8 +270,6 @@ confint.rmx <- function(object, parm, level = 0.95, method = "as", R = 9999,
   if(method == "boot"){
     Method <- "Bootstrap confidence interval"
     n <- length(object$x)
-    if (!exists(".Random.seed", envir = .GlobalEnv, inherits = FALSE)) runif(1)
-    seed <- get(".Random.seed", envir = .GlobalEnv, inherits = FALSE)
     X <- matrix(sample(object$x, size = R*n, replace = TRUE), nrow = R)
     if(object$rmxIF$model == "binom"){
       t0 <- c(object$rmxEst, object$rmxIF$asVar)
@@ -284,7 +282,7 @@ confint.rmx <- function(object, parm, level = 0.95, method = "as", R = 9999,
                          eps = object$rmxIF$radius/sqrt(n), ...)
     }
     t <- cbind(boot.res$rmxEst, n*boot.res$asSE^2)
-    boot.out <- list(t0 = t0, t = t, R = R, data = object$x, seed = seed, 
+    boot.out <- list(t0 = t0, t = t, R = R, data = object$x, 
                      statistic = function(x, i){}, sim = "ordinary", 
                      call = boot.res$call, stype = "i", 
                      strata = rep(1, length(object$x)),
